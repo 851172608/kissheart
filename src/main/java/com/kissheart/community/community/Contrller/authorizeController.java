@@ -56,7 +56,7 @@ public class authorizeController {
             user.setGmt_create(System.currentTimeMillis());
             user.setGmt_modified(user.getGmt_create());
             userMapper.insert(user);
-
+            user.setGmt_modified(123123);
             request.getSession().setAttribute("user",githubUser);
             return "redirect:/";
         }
