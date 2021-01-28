@@ -10,4 +10,5 @@ public class User {
     private String token;
     private long gmt_create;
     private long gmt_modified;
+
 }
